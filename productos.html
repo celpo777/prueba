@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latin Pack</title>
+    <link rel="stylesheet" href="stylesp.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-DfzSICsrKGvl5r06N7LWS2yStX9n0tBfQxPrJGjKZvIddpW1r1TvJDYzHYE9vXK/" crossorigin="anonymous">
+
+        <script>
+            function actualizarCategoriaActual() {
+              var categoriaActual = document.querySelector("section:target h2").textContent; // obtenemos el título de la sección actual
+              document.getElementById("categoria-actual").textContent = categoriaActual; // actualizamos el contenido del elemento donde se muestra la categoría actual
+            }
+        
+            // llamamos a la función actualizarCategoriaActual cada vez que se cambie la sección actual
+            window.addEventListener("hashchange", actualizarCategoriaActual);
+            actualizarCategoriaActual(); // llamamos a la función al cargar la página para mostrar la categoría actual por defecto
+          </script>
+  
+
+
+
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Categorías</a>
+                <ul>
+                    <li><a href="#categoria1">Categoría 1</a></li>
+                    <li><a href="#categoria2">Categoría 2</a></li>
+                    <li><a href="#categoria3">Categoría 3</a></li>
+                    <li><a href="#categoria4">Categoría 4</a></li>
+                    <li><a href="#categoria5">Categoría 5</a></li>
+                    <li><a href="#categoria6">Categoría 6</a></li>
+                </ul>
+            </li>
+             </ul>
+        <ul><li id="categoria-actual"  style="color: rgb(4, 232, 30);"></li> <!-- aquí agregamos el elemento donde se mostrará la categoría actual --></ul>
+    </nav>
+
+    <section>
+        <div class="banner">
+            <div class="banner-text">
+                <h1>Protegemos el medio ambiente para impulsar sueños</h1>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="descripcionProductos">
+        <h2>Nuestros productos </h2>
+        <p>En Esta seccion encuentras todos nuestros productos</p>
+    </section>
+
+    <section id="categoria1">
+        <h2>Categoría 1</h2>
+        <p>En esta sección se encuentran los productos de la Categoría 1. Se pueden agregar descripciones y botones de
+            cotizar para cada producto.</p>
+
+        <div class="products">
+            <div class="product">
+                <img src="product-1.jpg" alt="Producto 1">
+                <div class="product-description">
+                    <h3>Cajas de Cartón</h3>
+                    <p>Descripción del producto 1.</p>
+                </div>
+                <a href="productos.html#categoria1" class="view-more">Cotizar</a>
+            </div>
+            <div class="product">
+                <img src="product-2.jpg" alt="Producto 2">
+                <div class="product-description">
+                    <h3>Rollos de Carton</h3>
+                    <p>Descripción del producto 2.</p>
+                </div>
+                <a href="#" class="view-more">Cotizar</a>
+            </div>
+            <div class="product">
+                <img src="product-4.jpeg" alt="Producto 3">
+                <div class="product-description">
+                    <h3>Bolsas de papel</h3>
+                    <p>Descripción del producto 3.</p>
+                </div>
+                <a href="#" class="view-more">Cotizar</a>
+            </div>
+            <div class="product">
+                <img src="product-4.jpeg" alt="Producto 3">
+                <div class="product-description">
+                    <h3>Bolsas de papel</h3>
+                    <p>Descripción del producto 3.</p>
+                </div>
+                <a href="#" class="view-more">Cotizar</a>
+            </div>
+            <div class="product">
+                <img src="product-4.jpeg" alt="Producto 3">
+                <div class="product-description">
+                    <h3>Bolsas de papel</h3>
+                    <p>Descripción del producto 3.</p>
+                </div>
+                <a href="#" class="view-more">Cotizar</a>
+            </div>
+            <div class="product">
+                <img src="product-4.jpeg" alt="Producto 3">
+                <div class="product-description">
+                    <h3>Bolsas de papel</h3>
+                    <p>Descripción del producto 3.</p>
+                </div>
+                <a href="#" class="view-more">Cotizar</a>
+            </div>
+    </section>
+    </section>
+
+    <section id="categoria2">
+        <h2>Categoría 2</h2>
+        <p>En esta sección se encuentran los productos de la Categoría 2. Se pueden agregar descripciones y botones de
+            cotizar para cada producto.</p>
+        <ul>
+            <li>Producto 1</li>
+            <li>Producto 2</li>
+            <li>Producto 3</li>
+            <li>Producto 4</li>
+            <li>Producto 5</li>
+            <li>Producto 6</li>
+            <li>Producto 1</li>
+            <li>Producto 2</li>
+            <li>Producto 3</li>
+            <li>Producto 4</li>
+            <li>Producto 5</li>
+            <li>Producto 6</li>
+            <li>Producto 1</li>
+            <li>Producto 2</li>
+            <li>Producto 3</li>
+            <li>Producto 4</li>
+            <li>Producto 5</li>
+            <li>Producto 6</li>
+        </ul>
+    </section>
+
+    <section id="categoria3">
+        <h2>Categoría 3</h2>
+        <p>En esta sección se encuentran los productos de la Categoría 3. Se pueden agregar descripciones y botones de
+            cotizar para cada producto.</p>
+        <ul>
+            <li>Producto 1</li>
+            <li>Producto 2</li>
+            <li>Producto 3</li>
+            <li>Producto 4</li>
+            <li>Producto 5</li>
+            <li>Producto 6</li>
+        </ul>
+    </section>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Código JavaScript aquí
+
+            window.addEventListener('scroll', function () {
+                var sections = document.querySelectorAll('section');
+                var navLinks = document.querySelectorAll('nav a');
+                var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+                for (var i = 0; i < sections.length; i++) {
+                    var top = sections[i].offsetTop - 100;
+                    var bottom = top + sections[i].offsetHeight;
+                    if (scrollPos >= top && scrollPos <= bottom) {
+                        navLinks[i].classList.add('active');
+                    } else {
+                        navLinks[i].classList.remove('active');
+                    }
+                }
+            });
+
+        });
+
+    
+        // Obtener el elemento de la categoría actual
+var categoriaActual = document.getElementById("categoria-actual");
+
+// Obtener las secciones de la página
+var secciones = document.querySelectorAll("section");
+
+// Agregar un controlador de eventos para el desplazamiento de la página
+window.addEventListener("scroll", function() {
+  // Obtener la posición actual de desplazamiento
+  var posicion = window.pageYOffset || document.documentElement.scrollTop;
+
+  // Buscar la sección que está en la parte superior de la pantalla
+  for (var i = 0; i < secciones.length; i++) {
+    var seccion = secciones[i];
+    var seccionArriba = seccion.offsetTop - 50;
+    var seccionAbajo = seccionArriba + seccion.offsetHeight;
+
+    if (posicion >= seccionArriba && posicion < seccionAbajo) {
+      // Actualizar el elemento de la categoría actual con el nombre de la sección
+      categoriaActual.innerHTML = seccion.id;
+    }
+  }
+});
+
+
+
+
+    </script>
+
+
+
+
+</body>
